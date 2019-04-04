@@ -15,7 +15,7 @@ Given these concerns, the cleaning stations inspect the turbidity—product trac
 The goal of this competition was to predict turbidity in the last rinsing phase in order to help minimize the use of water, energy and time, while ensuring high cleaning standards.
 
 ## What's in this Repository
-This repository contains code from winning competitors in the [Power Laws: Cold Start Energy Forecasting](https://www.drivendata.org/competitions/55/schneider-cold-start/) DrivenData challenge.
+This repository contains code from winning competitors in the [Sustainable Industry: Rinse Over Run](https://www.drivendata.org/competitions/56/predict-cleaning-time-series/) DrivenData challenge.
 
 #### Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).
 
