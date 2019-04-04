@@ -1,0 +1,77 @@
+Model documentation
+
+1. 
+
+I work as a data scientist and like to turn my hand to online machine learning competitions.  I also take part in DataKindUK charity hackathons ("DataDives").
+
+2.
+
+I followed feature extraction by fitting a conventional supervised learning model.  The idea was to maximise the chance of interpretability by looking for relationships to simple features.  Interpretability seemed to be of interest to the competition sponsors.
+
+3. 
+
+Used data augmentation to increase the size of the training set.  Each base process led to four training processes with truncation to each phase.  Weights were used to match the competition setup.
+
+# Augment the training data with weights to match the generation process of the competition.
+# For each process we create four processes with weights (phase_weight) to correspond to the 
+# probability of stopping observation after each phase.
+# We create "new_process_id" to index these augmented processes.  
+f1<-f[phase_num<=1][,new_process_id:=paste("p1",process_id,sep=".")][,phase_weight:=0.1]
+f2<-f[phase_num<=2][,new_process_id:=paste("p2",process_id,sep=".")][,phase_weight:=0.3]
+f3<-f[phase_num<=3][,new_process_id:=paste("p3",process_id,sep=".")][,phase_weight:=0.3]
+f4<-f[phase_num<=4][,new_process_id:=paste("p4",process_id,sep=".")][,phase_weight:=0.3]
+fmatch<-rbind(f1,f2,f3,f4)
+
+Used weights to both handle the data augmentation and also to convert the MAPE target into a an MAE problem.  (The 1e6 is required to work around a feature of LightGBM.)
+
+# create a weight to cover three things:
+# 1. the weights of the augmentation process
+# 2. weights to covert a custom MAPE problem into an MAE problem that lightgbm can fit
+# 3. downscale weights so that leaf weights in lightgbm works
+trainweight<-ftrainlabelled$phase_weight/pmax(trainy,290000)*1e6
+
+Fit a large gradient-boosted model with LightGBM.  LightGBM is fast and supports L1 loss as specified in the competition.
+
+# params for lightgbm
+params <- list(objective = "regression_l1",
+               metric = "l1",
+               num_leaves = 800,
+               nthread = 2
+)
+
+# fit the model
+model <- lgb.train(params,
+                   train,
+                   21000,
+                   list(train=train),
+                   min_data = 80,
+                   learning_rate = 0.001,
+                   early_stopping_rounds = 300,
+                   eval_freq = 50)
+
+
+4.
+
+I started using the simpler GBM package in R but this was really slow.  I still like it as it produces partial dependency plots and has a nice interface.
+
+I tried a convolutional neural network on the multidimensional time-series.  This didn't immediately work.
+
+5. 
+
+Base R graphics, lattics graphics, data.table and the diagnostics built into the lightgbm and gbm packages were great.
+
+6. 
+
+I used a fixed 90:10 training:validation split.
+
+7. 
+
+The step of data augmentation seems to be memory-hungry and used about 8GB of RAM.  Don't worry about lightgbm spewing out loads of warnings about "No further splits".  lightgbm seems to be very sensitive to exact version/platform so a precisely matching result may not be achieved.  I can forward my fitted model if wanted.
+
+8.
+
+See write-up for stage 2 of the competition.
+
+9. 
+
+I'd want to see more data about the objects and a statistical experimental design or randomised design used to create more diverse data.

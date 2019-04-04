@@ -42,4 +42,12 @@ Place |Team or User | Public Score | Private Score | Summary of Model
 
 Additional solution details can be found in the directories for each competitor's code.
 
+## Report winners
+
+This competition included a second stage in which the top 15 competition winners were invited to submit presentations of their work. The top three reports were:
+
+- 1st Place: Contiamo (2nd in Prediction Competition)
+- 2nd Place: arindam43 (3rd in Prediction Competition)
+- 3rd Place: riccardonizzolo (5th in Prediction Competition)
+
 #### Benchmark Blog Post: ["Benchmark - Sustainable Industry: Rinse Over Run"](http://drivendata.co/blog/rinse-over-run-benchmark/)
