@@ -1,0 +1,12 @@
+name: root
+channels:
+  - conda-forge
+dependencies:
+  - catboost=0.11*
+  - ipywidgets=7.4*
+  - matplotlib=3.0*
+  - numpy=1.15*
+  - pandas=0.24*
+  - papermill=0.14*
+  - pip:
+    - pyarrow>=0.12

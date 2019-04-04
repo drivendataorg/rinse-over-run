@@ -1,0 +1,25 @@
+Python version: 3.4
+required python packages:
+1. Pandas 0.24.1
+2. Numpy 1.14.2
+3. lightgbm 2.2.1
+4. sklearn 0.20.0
+5. scipy 1.1.0
+
+How to generate results:
+1. update dataset file path and file names in config.json file
+   format of the file looks like this
+   {"train_set":path+"train_values.csv", 
+    "test_set":path+\\test_values.csv,
+     "label_file":path\\train_labels.csv,
+     "recipe_metadata":path+\\recipe_metadata.csv,
+      "sample_submission_file":path+\\submission_format.csv,
+      "final_submission_path":"C:\\forecasting\\"}
+   include sample submission file in the directory to generate submissions
+
+2. to generate final submission
+   a) go to command line/anaconda command line
+   b)change directory to the path where all the python files reside  e.g)  cd  python_scripts_file_path
+   c) run  python run.py   to generate results
+   d)check "final_submission_path" to get the submission file
+   

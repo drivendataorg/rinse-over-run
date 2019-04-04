@@ -1,0 +1,9 @@
+pandas==0.23.0
+numpy==1.15.2
+click==7.0
+matplotlib==3.0.3
+sklearn==0.20.1
+terminaltables==3.1.0
+glob
+shap==0.24.0
+tsfresh==0.11.0

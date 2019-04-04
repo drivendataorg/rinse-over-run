@@ -1,0 +1,42 @@
+{
+  "name": "Rinse",
+  "device": "cuda:0",
+  "cuda": false,
+  "gpu": 0,
+  "data_loader": {
+    "data_dir_control": "/media/natasha/Data1/algomost",
+    "data_dir_train": "/media/natasha/Data1/algomost",
+    "batch_size_train": 64,
+    "evaluation_batch_size": 1,
+    "shuffle": true,
+    "drop_last": false
+  },
+  "lr_scheduler_type": "ExponentialLR",
+  "lr_scheduler_freq": 7,
+  "lr_scheduler": {
+    "gamma": 0.9
+  },
+  "optimizer_type": "Adam",
+  "optimizer": {
+    "lr": 0.001,
+    "weight_decay": 0.0001
+  },
+  "loss": "huber",
+  "metrics": [],
+  "trainer": {
+    "epochs": 40,
+    "save_dir": "saved/",
+    "save_freq": 10,
+    "verbosity": 2,
+    "monitor": "loss",
+    "monitor_mode": "min"
+  },
+  "arch": "Rinse",
+  "model": {},
+  "temp_folder": "/media/natasha/Data1/temp/all_outputs_rinse/",
+  "pack_volume": 1,
+  "only_inference": false,
+  "output_print": false,
+  "n_splits": 5,
+  "tta": false
+}

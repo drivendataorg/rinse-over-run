@@ -1,0 +1,2 @@
+{"train_set":"C:\\forecasting\\train_values.csv", "test_set":"C:\\forecasting\\test_values.csv","label_file":"C:\\forecasting\\train_labels.csv","recipe_metadata":"C:\\forecasting\\recipe_metadata.csv",
+"sample_submission_file":"C:\\weird_kaggle\\submission_format.csv","final_submission_path":"C:\\forecasting\\"}

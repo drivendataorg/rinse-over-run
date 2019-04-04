@@ -1,0 +1,62 @@
+# This file was created with the following command:
+# conda list -e > requirements.txt
+
+# According to the auto-generated header for this file,
+# this file may be used to create an environment using:
+# $ conda create --name <env> --file <this file>
+# However, I have not tested this myself.
+# platform: win-64
+
+backcall=0.1.0=py_0
+blas=1.0=mkl
+ca-certificates=2018.11.29=ha4d7672_0
+certifi=2018.11.29=py36_1000
+colorama=0.4.1=py_0
+cycler=0.10.0=py_1
+decorator=4.3.2=py_0
+freetype=2.9.1=h5db478b_1005
+icc_rt=2019.0.0=h0cc432a_1
+icu=58.2=vc14_0
+intel-openmp=2019.1=144
+ipython=7.2.0=py36h39e3cac_1000
+ipython_genutils=0.2.0=py_1
+jedi=0.13.2=py36_1000
+jpeg=9c=hfa6e2cd_1001
+kiwisolver=1.0.1=py36he980bc4_1002
+libpng=1.6.36=h7602738_1000
+matplotlib=3.0.2=py36h8a2030e_1001
+matplotlib-base=3.0.2=py36h3e3dc42_1001
+mkl=2018.0.3=1
+mkl_fft=1.0.10=py36_0
+mkl_random=1.0.2=py36_0
+numpy=1.15.4=py36ha559c80_0
+numpy-base=1.15.4=py36h8128ebf_0
+openssl=1.0.2p=hfa6e2cd_1002
+pandas=0.23.4=py36h830ac7b_1000
+parso=0.3.2=py_0
+pickleshare=0.7.5=py36_1000
+pip=18.1=py36_1000
+prompt_toolkit=2.0.7=py_0
+pygments=2.3.1=py_0
+pyparsing=2.3.1=py_0
+pyqt=5.6.0=py36h764d66f_1008
+python=3.6.6=he025d50_0
+python-dateutil=2.7.5=py_0
+pytz=2018.9=py_0
+qt=5.6.2=h2639256_8
+scikit-learn=0.20.0=py36heebcf9a_1
+scipy=1.1.0=py36h4f6bf74_1
+setuptools=40.6.3=py36_0
+shap=0.27.0=py36h452e1ab_0
+sip=4.18.1=py36h6538335_1000
+six=1.12.0=py36_1000
+sqlite=3.26.0=hfa6e2cd_1000
+tornado=5.1.1=py36hfa6e2cd_1000
+tqdm=4.29.1=py_0
+traitlets=4.3.2=py36_1000
+vc=14=0
+vs2015_runtime=14.0.25420=0
+wcwidth=0.1.7=py_1
+wheel=0.32.3=py36_0
+wincertstore=0.2=py36_1002
+zlib=1.2.11=h2fa13f4_1004

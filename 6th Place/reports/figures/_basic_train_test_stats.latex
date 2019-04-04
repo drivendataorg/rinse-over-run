@@ -1,0 +1,10 @@
+\begin{tabular}{lll}
+\toprule
+{} &             train &              test \\
+\midrule
+\# of series &              5021 &              2967 \\
+\# of obj    &                94 &                88 \\
+min time    &  2018-02-21 17:42 &  2018-04-25 10:57 \\
+max time    &  2018-04-25 12:02 &  2018-05-24 14:26 \\
+\bottomrule
+\end{tabular}
