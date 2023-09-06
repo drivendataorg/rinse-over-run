@@ -1,6 +1,6 @@
 # Sustainable Industry: Rinse Over Run
 
-This repository contains the **12th** place solution for the competition  
+This repository contains the **10th** place solution for the competition  
 https://www.drivendata.org/competitions/56/predict-cleaning-time-series/
 
 

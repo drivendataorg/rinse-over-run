@@ -3,8 +3,7 @@
 
 ![Banner Image](https://s3.amazonaws.com/drivendata-public-assets/efficiency-banner.jpg)
 
-#  Sustainable Industry: Rinse Over Run
-
+# Sustainable Industry: Rinse Over Run
 
 ## Goal of the Competition
 
@@ -15,10 +14,10 @@ Given these concerns, the cleaning stations inspect the turbidity—product trac
 The goal of this competition was to predict turbidity in the last rinsing phase in order to help minimize the use of water, energy and time, while ensuring high cleaning standards.
 
 ## What's in this Repository
-This repository contains code from winning competitors in the [Sustainable Industry: Rinse Over Run](https://www.drivendata.org/competitions/56/predict-cleaning-time-series/) DrivenData challenge.
 
-#### Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).
+This repository contains code from winning competitors in the [Sustainable Industry: Rinse Over Run](https://www.drivendata.org/competitions/56/predict-cleaning-time-series/) DrivenData challenge. Code for all winning solutions are open source under the MIT License.
 
+**Winning code for other DrivenData competitions is available in the [competition-winners repository](https://github.com/drivendataorg/competition-winners).**
 
 ## Winning Submissions
 
@@ -54,4 +53,6 @@ This competition included a second stage in which the top 15 competition winners
 
 These and other submitted reports can be found at `reports/Stage 2 Report.pdf` inside the directory for each submission.
 
-#### Benchmark Blog Post: ["Benchmark - Sustainable Industry: Rinse Over Run"](http://drivendata.co/blog/rinse-over-run-benchmark/)
+**["Meet the Winners" Blog Post](https://drivendata.co/blog/sustainable-industry-rinse-over-run-winners)**
+
+**Benchmark Blog Post: ["Benchmark - Sustainable Industry: Rinse Over Run"](https://drivendata.co/blog/rinse-over-run-benchmark/)**
