@@ -14,6 +14,6 @@ pandas==0.24.0
 numpy==1.16.1
 matplotlib==3.0.2
 ipython==7.2.0
-notebook==5.7.4
+notebook==5.7.8
 lightgbm==2.2.2
 black==19.3b0
